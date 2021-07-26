@@ -31,7 +31,7 @@ function App() {
   }, []);
 
   return isLoading ? (
-    <p>Loading ...</p>
+    <p>Chargement de la page</p>
   ) : (
     <div className="App">
       <div className="wrapper">
