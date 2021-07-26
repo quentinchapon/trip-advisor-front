@@ -1,38 +1,234 @@
+body {
+  background-color: #f2f5f5;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.wrapper {
+  width: 100vw;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.containerHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.logoHeader {
+  height: 90%;
+}
+
+.heroBanner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 96%;
+  max-width: 1200px;
+  margin: 60px 0;
+}
+
+.heroBanner img {
+  width: 350px;
+  height: 196px;
+  border-radius: 6px;
+}
+
+.heroBanner p {
+  margin-top: 40px;
+  font-family: "Lato", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 30px;
+  max-width: 760px;
+}
+
+.restaurantInfos {
+  margin-right: 3rem;
+}
+
+.mainContent {
+  display: flex;
+  column-gap: 1.5rem;
+  width: 96%;
+  max-width: 1200px;
+  background-color: #f2f5f5;
+}
+
+.cardsMenu {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 15px;
+  row-gap: 15px;
+  width: 100%;
+}
+
+.category {
+  height: 600px;
+  width: 70%;
+}
+
+.basket {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  margin-top: 84px;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0 0 10px lightgrey;
+  width: 30%;
+  box-sizing: border-box;
+}
+
+.basket p {
+  color: lightgrey;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin-top: 60px;
+}
+
+.btnValidateBasket {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
   color: white;
+  width: 100%;
+  background-color: lightgrey;
+  height: 50px;
+  border: none;
+  border-radius: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 0 10px lightgrey;
+  transform: scale(1);
+  transition-property: box-shadow, transform;
+  transition-duration: 0.3s;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card:hover {
+  box-shadow: 0 0 30px lightgrey;
+  transform: scale(1.01);
+}
+
+.dishDescription {
+  height: 40px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 1.3rem;
+}
+
+.price {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.cardDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  max-width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+.pricePopular {
+  display: flex;
+  flex-direction: row;
+}
+
+.pricePopular :nth-child(2) {
+  color: #ffa22f;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    flex-direction: column;
+    height: 400px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .heroBanner img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .category {
+    width: 100%;
+  }
+}
+
+@media (max-width: 555px) {
+  .cardsMenu {
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .heroBanner {
+    flex-direction: column;
+  }
+
+  .heroBanner img {
+    margin-top: 30px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
   }
 }

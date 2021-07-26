@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <g id="Groupe_1" data-name="Groupe 1" transform="translate(-299 -278)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="150" height="150" transform="translate(299 278)" fill="#f5f5f5"/>
+    <g id="no-img" transform="translate(344.01 323.01)" opacity="0.1">
+      <path id="Tracé_1" data-name="Tracé 1" d="M51.59,3.906H8.39A4.489,4.489,0,0,0,3.906,8.39v43.2A4.489,4.489,0,0,0,8.39,56.074h43.2a4.489,4.489,0,0,0,4.484-4.484V8.39A4.489,4.489,0,0,0,51.59,3.906Zm3.139,37.365L36.392,27.237,30.35,33.528l-8.669-8.257L5.251,41.036V8.39A3.143,3.143,0,0,1,8.39,5.25h43.2A3.143,3.143,0,0,1,54.729,8.39Z"/>
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="5.118" cy="5.118" r="5.118" transform="translate(39.98 12.363)"/>
+    </g>
+  </g>
+</svg>
